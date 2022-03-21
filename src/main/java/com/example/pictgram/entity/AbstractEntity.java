@@ -1,26 +1,30 @@
 package com.example.pictgram.entity;
 
-import java.sql.Date;
+
+
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 
+import lombok.Data;
+
 @MappedSuperclass
-@Date
+@Data
 public class AbstractEntity {
 	@Column(name = "created_at")
 	private Date createdAt;
 
-	@Column(name = "update_at")
-	private Date updateAt;
+	@Column(name = "updated_at")
+	private Date updatedAt;
 
 	@PrePersist
 	public void onPrepersist() {
 		Date date = new Date();
 		setCreatedAt(date);
-		setupdatedAt(date);
+		setUpdatedAt(date);
 	}
 
 	@PreUpdate
