@@ -13,3 +13,8 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
+        
+        servret:
+        multipart:
+        max-file-size: 20MB
+        max-repuest-size: 20MB
