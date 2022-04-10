@@ -5,10 +5,10 @@ spring:
     username: sa
     password: 
 
-  h2:
-    console:
-      enabled: true
-      spring:
+#  h2:
+#    console:
+#      enabled: true
+#      spring:
   mvc:
     hiddenmethod:
       filter:
