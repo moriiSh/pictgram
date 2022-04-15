@@ -16,7 +16,7 @@
 				<ul class="navbar-nav ms-auto">
 					<th:block sec:authorize="isAuthenticated()">
 						<class="nav-item">
-							<a> class="nav-link" th:href="@{/favorites}">
+							<a class="nav-link" th:href="@{/favorites}">
 								<img src="/images/icons/heart.png" th:src="@{/images/icons/heart.png}">
 							</a>
 							</li>
@@ -31,13 +31,13 @@
 									<img src="/images/icons/logout.png" th:src="@{/images/icons/logout.png}">
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" th:href="@{/users/new}">
-									<img src="/images/icons/register.png" th:src="@{/images/icons/register.png}">
-								</a>
-							</li>
 					</th:block>
 					<th:block sec:authorize="!isAuthenticated()">
+						<li class="nav-item">
+							<a class="nav-link" th:href="@{/users/new}">
+								<img src="/images/icons/register.png" th:src="@{/images/icons/register.png}">
+							</a>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" th:href="@{/login}">
 								<img src="/images/icons/login.png" th:src="@{/images/icons/login.png}">
