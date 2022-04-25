@@ -1,5 +1,7 @@
 package com.example.pictgram.form;
 
+import java.util.List;
+
 //import java.util.List;は必要なのか？
 
 import javax.validation.constraints.NotEmpty;
@@ -33,4 +35,8 @@ public class TopicForm {
 
     private UserForm user;
 
+    private List<FavoriteForm> favorites;
+
+    private FavoriteForm favorite;
+    
 }
