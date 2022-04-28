@@ -1,14 +1,14 @@
-#spring:
-#  datasource:
-#    driver-class-name: org.h2.Driver
-#    url: jdbc:h2:mem:pictgram
-#    username: sa
-#    password: 
-#
-#  h2:
-#    console:
-#      enabled: true
-#      debug: true
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:pictgram
+    username: sa
+    password: 
 
-#image:
-#  local: true
+  h2:
+    console:
+      enabled: true
+      debug: true
+
+image:
+  local: true

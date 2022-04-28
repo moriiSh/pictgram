@@ -13,12 +13,12 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
-					<th:block sec:authorize="isAuthenticated()">
-						<class="nav-item">
-							<a class="nav-link" th:href="@{/favorites}">
-								<img src="/images/icons/heart.png" th:src="@{/images/icons/heart.png}">
-							</a>
+					<ul class="navbar-nav ms-auto">
+						<th:block sec:authorize="isAuthenticated()">
+							<li class="nav-item">
+								<a class="nav-link" th:href="@{/favorites}">
+									<img src="/images/icons/heart.png" th:src="@{/images/icons/heart.png}">
+								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" th:href="@{/topics/new}">
@@ -31,19 +31,21 @@
 									<img src="/images/icons/logout.png" th:src="@{/images/icons/logout.png}">
 								</a>
 							</li>
-					</th:block>
-					<th:block sec:authorize="!isAuthenticated()">
-						<li class="nav-item">
-							<a class="nav-link" th:href="@{/users/new}">
-								<img src="/images/icons/register.png" th:src="@{/images/icons/register.png}">
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" th:href="@{/login}">
-								<img src="/images/icons/login.png" th:src="@{/images/icons/login.png}">
-							</a>
-						</li>
-					</th:block>
+						</th:block>
+					</ul>
+				</th:block>
+				<th:block sec:authorize="!isAuthenticated()">
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/users/new}">
+							<img src="/images/icons/register.png" th:src="@{/images/icons/register.png}">
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/login}">
+							<img src="/images/icons/login.png" th:src="@{/images/icons/login.png}">
+						</a>
+					</li>
+				</th:block>
 				</ul>
 			</div>
 		</div>

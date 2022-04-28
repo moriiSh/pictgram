@@ -163,7 +163,7 @@ public class TopicsController {
 
 		boolean isImageLocal = false;
 		if (imageLocal != null) {
-			isImageLocal = new Boolean(imageLocal);
+			isImageLocal = true;
 		}
 
 		Topic entity = new Topic();
