@@ -12,11 +12,6 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
-/**
- * @author morii
- *
- */
-
 @Entity
 @Table(name = "comment")
 @Data

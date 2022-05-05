@@ -20,4 +20,4 @@ spring:
         max-repuest-size: 20MB
         
         image:
-        local: true
+    local: true
