@@ -21,7 +21,7 @@ public class AbstractEntity {
 	private Date updatedAt;
 
 	@PrePersist
-	public void onPrepersist() {
+	public void onPrePersist() {
 		Date date = new Date();
 		setCreatedAt(date);
 		setUpdatedAt(date);

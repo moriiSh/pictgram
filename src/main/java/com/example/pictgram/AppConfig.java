@@ -2,12 +2,15 @@ package com.example.pictgram;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cloud.aws.autoconfigure.context.ContextInstanceDataAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.example.pictgram.form.TopicForm;
 
 @Configuration
+@EnableAutoConfiguration(exclude = { ContextInstanceDataAutoConfiguration.class })
 public class AppConfig {
 
 	@Bean

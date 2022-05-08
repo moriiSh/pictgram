@@ -4,7 +4,6 @@ spring:
     url: jdbc:h2:mem:pictgram
     username: sa
     password: 
-
   h2:
     console:
       enabled: true
@@ -20,4 +19,4 @@ spring:
         max-repuest-size: 20MB
         
         image:
-    local: true
+          local: true

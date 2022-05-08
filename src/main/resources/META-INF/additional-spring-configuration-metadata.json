@@ -1,5 +1,32 @@
-{"properties": [{
-  "name": "spring.mvc.hiddenmethod.filter.local",
-  "type": "java.lang.String",
-  "description": "A description for 'spring.mvc.hiddenmethod.filter.local'"
-}]}
+{"properties": [
+  {
+    "name": "spring.mvc.hiddenmethod.filter.local",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.hiddenmethod.filter.local'"
+  },
+  {
+    "name": "spring.image.local",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.image.local'"
+  },
+  {
+    "name": "spring.mvc.hiddenmethod.filter.max-repuest-size",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.hiddenmethod.filter.max-repuest-size'"
+  },
+  {
+    "name": "spring.mvc.hiddenmethod.filter.multipart",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.hiddenmethod.filter.multipart'"
+  },
+  {
+    "name": "spring.mvc.hiddenmethod.filter.max-file-size",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.hiddenmethod.filter.max-file-size'"
+  },
+  {
+    "name": "spring.mvc.hiddenmethod.filter.servret",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.hiddenmethod.filter.servret'"
+  }
+]}
