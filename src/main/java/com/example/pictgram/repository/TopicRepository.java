@@ -8,5 +8,5 @@ import com.example.pictgram.entity.Topic;
 @Repository
 public interface TopicRepository extends JpaRepository<Topic, Long> {
 
-    Iterable<Topic> findAllByOrderByUpdatedAtDesc();
+	Iterable<Topic> findAllByOrderByUpdatedAtDesc();
 }
